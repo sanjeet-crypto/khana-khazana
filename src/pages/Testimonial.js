@@ -24,6 +24,17 @@ const SubHeading = styled.div`
     font-size: 40px;
   }
 `;
+const SubName = styled.div`
+  align-self: flex-end;
+  font-size: 30px;
+  color: #710193;
+
+  font-weight: 600;
+
+  @media screen and (max-width: 1324px) {
+    font-size: 20px;
+  }
+`;
 
 const Content = styled.p`
   font-family: "metropolis-regular", sans-serif;
@@ -40,23 +51,22 @@ const Content = styled.p`
 const images = [
   {
     label: "Ramesh Babu",
-    imgPath:
-      "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
+    imgPath:"https://i.imgur.com/VZSp8oX.png",
   },
   {
     label: "Bunty Sharma",
     imgPath:
-      "https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60",
+      "https://i.imgur.com/ER4cJhp.png",
   },
   {
     label: "Remo Random",
     imgPath:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80",
+      "https://i.imgur.com/VZSp8oX.png",
   },
   {
     label: "Sai Sambhav",
     imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+      "https://i.imgur.com/ER4cJhp.png",
   },
 ];
 
@@ -78,7 +88,7 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-      <div>
+      <div className='testbg'>
 <SubHeading>Testimonials</SubHeading>
     <Content>Lets our customers speak for us</Content>
       <div className='test'>
@@ -96,7 +106,7 @@ function SwipeableTextMobileStepper() {
             bgcolor: "background.default",
           }}
         >
-          <Typography>{images[activeStep].label}</Typography>
+          <SubName>{images[activeStep].label}</SubName>
         </Paper>
         <AutoPlaySwipeableViews
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}

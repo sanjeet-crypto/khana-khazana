@@ -3,7 +3,7 @@ import Card from '../components/card/ccard'
 import ChefData from './chefData';
 import { Grid } from '@mui/material';
 import styled from 'styled-components';
-
+import './ourchefs.css';
 const SubHeading = styled.div`
   align-self:flex-end;
   font-size: 40px;

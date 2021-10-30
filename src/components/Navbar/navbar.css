@@ -41,3 +41,7 @@ li a{
     font-weight: bolder;
     color: #FEA904;
 }
+
+.nav_button{
+padding-left: 3rem;
+}

@@ -1,4 +1,12 @@
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.testbg{
+    background-color: #FFF5EC;
+}
 .test{
     width: 100%;
     display: flex;

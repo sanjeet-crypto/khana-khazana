@@ -1,6 +1,29 @@
 import React from "react";
 import './navbar.css';
+import styled from "styled-components";
 
+const Button = styled.button`
+  border: 0;
+  outline: 0;
+  padding: 8px 1em;
+  margin-left: 4rem;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: #fea904;
+  border: 2px solid #490055;
+  transition: all 240ms ease-in-out;
+  cursor: pointer;
+  
+  &:hover {
+    color: #fff;
+    
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 7px;
+  }
+`;
 const Navbar = () => {
     return(
         <>
@@ -32,6 +55,10 @@ const Navbar = () => {
                 <a className="contact_nav" href="#forms">Contact Us</a>
             </li>
         </ul>
+        <Button>
+            Login
+        </Button>
+        
     </nav>
         </>
     )

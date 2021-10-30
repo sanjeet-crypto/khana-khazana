@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    padding-left: 4rem;
+}
+
+li a{
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.main-nav{
+    background-color: #FFF5EC;
+    height:2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+   /* margin-top: 1rem; */
+   display: flex;
+   justify-content: flex-start;
+}
+
+.khanakhazana_logo{
+    font-family: sans-serif;
+    color: #FEA904;
+}

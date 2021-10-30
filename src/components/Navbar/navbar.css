@@ -17,12 +17,14 @@ ul {
 
 li a{
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.9rem;
+    color: black;
+    font-size: 1rem;
 }
 
 .main-nav{
     background-color: #FFF5EC;
-    height:2.5rem;
+    height:3.5rem;
     display: flex;
     align-items: center;
 }
@@ -35,5 +37,7 @@ li a{
 
 .khanakhazana_logo{
     font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
     color: #FEA904;
 }

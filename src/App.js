@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import Footer from "./components/Footer/footer";
+import Navbar from "./components/Navbar/navbar";
+
+import Landing from "./pages/Landing";
+import DabbaDelivery from "./pages/DabbaDelivery";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+      <Navbar/>
+        <Switch>
+          <Route path='/' exact component={Landing}/>
+          <Route path='/dabbadelivery' exact component={DabbaDelivery}/>
+          <Route path='/register' exact component={Register}/>
+          <Route path='/login' exact component={Login}/>
+        </Switch>
+       <Footer/>
+      </Router>
+    </>
   );
 }
 

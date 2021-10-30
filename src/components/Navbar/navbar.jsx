@@ -14,7 +14,7 @@ const Navbar = () => {
                 <a className="home_nav" href="#home">Home</a>
             </li>
             <li className="menu__item">
-                <a className="aboutus_nav" href="#about">About uS</a>
+                <a className="aboutus_nav" href="#about">About Us</a>
             </li>
             <li className="menu__item">
                 <a className="howitworks_nav" href="#forms">How It Works</a>

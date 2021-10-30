@@ -21,6 +21,7 @@ function App() {
           <Route path='/dabbadelivery' exact component={DabbaDelivery}/>
           <Route path='/register' exact component={Register}/>
           <Route path='/login' exact component={Login}/>
+          
         </Switch>
        <Footer/>
       </Router>

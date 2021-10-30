@@ -3,7 +3,6 @@ import { useTheme } from "@emotion/react";
 import { Box } from "@mui/system";
 import { MobileStepper } from "@mui/material";
 import { Paper } from "@mui/material";
-import { Typography } from "@mui/material";
 import { Button } from "@mui/material";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";

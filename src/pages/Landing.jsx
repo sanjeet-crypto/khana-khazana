@@ -11,7 +11,7 @@ const Landing = () => {
                     <h1>FOOD</h1>
                     <h2>Bringing Homemade dishes to your doorstep</h2>
                     </div>
-                    
+                    <img scr='https://i.imgur.com/t1sJJB5.png' alt=''></img>
                     <div className='ordernow_button_landing'>
                         <div className="order_now_button">ORDER NOW</div>
                     </div>

@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "./components/Footer/footer";
 import Navbar from "./components/Navbar/navbar";
 
-import Landing from "./pages/Landing";
+import landingpages from "./pages/landingpage";
 import DabbaDelivery from "./pages/DabbaDelivery";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Navbar/>
         <Switch>
-          <Route path='/' exact component={Landing}/>
+          <Route path='/' exact component={landingpages}/>
           <Route path='/dabbadelivery' exact component={DabbaDelivery}/>
           <Route path='/register' exact component={Register}/>
           <Route path='/login' exact component={Login}/>
